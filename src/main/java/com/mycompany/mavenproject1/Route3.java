@@ -59,10 +59,10 @@ public class Route3 {
                 }); 
       
         camelContext.start();
-        Thread.sleep(10000);
+        Thread.sleep(20000);
         camelContext.stop();
           } catch (Exception ex) {
-                Logger.getLogger(Route3.class.getName()).log(Level.SEVERE, null, ex);
+              //  Logger.getLogger(Route3.class.getName()).log(Level.SEVERE, null, ex);
             }
         }
 
