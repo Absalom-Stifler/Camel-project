@@ -18,8 +18,8 @@ public class Route extends RouteBuilder {
 	public void configure() throws Exception {
 		// TODO Auto-generated method stub   
           	
-	from("file:data/inbox")
-        .bean(new Route2(), "transformContent");
-	
+	from("file:data/inbox") //
+        .bean(new Route2(), "transformContent(body)");
+	//.to("file:data/inbox");
 	}
 }
